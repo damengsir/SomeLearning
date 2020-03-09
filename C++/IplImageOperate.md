@@ -34,3 +34,14 @@ IplImage* src,Dest;
 
 cvResize(src, Dest);//将src的图像大小变成Dest的图像大小
 ```
+## 六、内存数据的操作
+```
+Mat Image;
+unsigned char* imageData = Image.data;
+
+//创建一个目标空间
+unsigned char* pData = new unsigned char[width,height,pixlByteSize];
+
+//将imageDada复制到PData空间中
+memcpy(pData,imageData,width*height*pixByteSize);
+```
