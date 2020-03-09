@@ -7,6 +7,7 @@ cvReleaseImage(&src);//IplImage*类型使用完毕后，必须手动释放内存
 
 ## 二、IplImage*类型转换成Mat,并保存
 ```
+IplImage *pImage;
 Mat dstImage = cvarrToMat(pImage);
 imwrite("D:/yyyy.jpg", dstImage);
 ```
