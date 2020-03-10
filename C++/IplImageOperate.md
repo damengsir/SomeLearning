@@ -60,3 +60,9 @@ cvInitFont(&font, CV_FONT_VECTOR0, 4, 4, 0, 6, 8);
 cvPutText(src, "I Love You!", cvPoint(100, 150), &font, cvScalar(0, 0, 255, NULL));
 cvReleaseImage(&src);
 ```
+# 八、图片镜像
+```
+IplImage * src = cvLoadImage("D:/Girl.jpg");
+cvFlip(src, 0, 1);//水平镜像
+cvFlip(src, 0, 0);//垂直镜像
+```
