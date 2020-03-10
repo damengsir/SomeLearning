@@ -66,3 +66,8 @@ IplImage * src = cvLoadImage("D:/Girl.jpg");
 cvFlip(src, 0, 1);//水平镜像
 cvFlip(src, 0, 0);//垂直镜像
 ```
+# 九、复制图像
+```
+IplImage * src = cvLoadImage("D:/777.jpg"2 );
+IplImage * destImage = cvCloneImage(src);
+```
