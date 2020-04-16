@@ -17,6 +17,7 @@ Mat Img=imread("1.jpg");
 IplImage* pBinary = &IplImage(Img);//浅拷贝
 IplImage *input = cvCloneImage(pBinary);//深拷贝只要再加一次复制数据
 ```
+补充：OpenCV3.4.9不能使用浅拷贝进行类型转换，[解决方案](https://blog.csdn.net/qq_43348528/article/details/104051519)
 ## 3、IplImage*类型的参数获取
 ```
 src = cvLoadImage("D:/20200303153355.jpg", -1);//读取彩色图
