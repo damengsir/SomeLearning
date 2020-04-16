@@ -11,6 +11,12 @@ IplImage *pImage;
 Mat dstImage = cvarrToMat(pImage);
 imwrite("D:/yyyy.jpg", dstImage);
 ```
+##2.1 Mat转IplImage*
+```
+Mat Img=imread("1.jpg");
+IplImage* pBinary = &IplImage(Img);//浅拷贝
+IplImage *input = cvCloneImage(pBinary);//深拷贝只要再加一次复制数据
+```
 ## 3、IplImage*类型的参数获取
 ```
 src = cvLoadImage("D:/20200303153355.jpg", -1);//读取彩色图
@@ -19,7 +25,7 @@ int height = src->height;
 int widthstep = src->widthstep;
 int channel = src->nChannels;
 ```
-## 4、IplImage*图像类型的创建
+## 4、IplImage*：创建一个新的图像的内存块
 ```
 IplImage *pImageDisplay;
 int width = 100;
@@ -32,7 +38,7 @@ pImageDisplay = cvCreateImage(size, IPL_DEPTH_8U, nChannels);
 ```
 IplImage* src,Dest;
 
-cvResize(src, Dest);//将src的图像大小变成Dest的图像大小
+cvResize(src, Dest);//将src的图像大小变成Dest的图像大小，同时将src的图像信息，存储到Dest
 ```
 ## 6、内存数据的操作
 ```
