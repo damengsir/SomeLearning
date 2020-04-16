@@ -12,3 +12,8 @@ CString str1;
 str1 = "ABC";
 string str2 = str1.GetBuffer();
 ```
+## 4、const char* 类型的值不能用于初始化char*
+```
+const char * A;
+char* B = (char*)A;
+```
