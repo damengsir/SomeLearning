@@ -2,7 +2,7 @@
 * 1、可能因为直接引用得dll的依赖项未添加到程序文件夹中。
 * 2、C#中，添加dll引用得格式代码
 
-```
+```csharp
 using System;
 using System.Runtime.InteropServices;
 

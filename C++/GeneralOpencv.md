@@ -1,5 +1,5 @@
 ## 一、OpenCV错误的捕获
-```
+```c
 try{
     //有问题的代码
 }
@@ -13,7 +13,7 @@ catch(cv::Exception& e){
 ```
 ## 二、VS与OpenCV
 * VS与OpenCV的版本号需要对应一致，否则会报错
-```
+```c
 Visual Studio 6 ： vc6
 Visual Studio 2003 ： vc7
 Visual Studio 2005 ： vc8
