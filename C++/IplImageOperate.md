@@ -96,3 +96,10 @@ int add = 150;
 cvSetImageROI(src, cvRect(x, y, width, height));
 cvResetImageROI(src);
 ```
+
+## 显示图像时，设置窗口大小
+```c
+cvNamedWindow("window_Name",0);//0表示可以任意的改变长度，宽度
+cvResizeWindow("window_Name",500,600);//可以设置长宽比
+cvDestoryWindow("window_Name");//最后销毁窗口
+```
