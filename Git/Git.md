@@ -8,3 +8,5 @@
 ### 6、`git checkout <branch>`-切换分支
 ### 7、`git merge <branch>`-合并分支
 ### 8、`git reset --hard <版本号>` --回退到以前的某个版本号
+### 9、`git reset --soft HEAD~1`--软撤销`git commit`，代码还在
+### 10、`git reset HEAD` --撤销全部的git add文件
